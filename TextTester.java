@@ -5,5 +5,11 @@
 // * Author: Benjamin Chau
 // * Date: 11/25/2025
 // */
+public class TestTester{
+  PrintWriter output = new PrintWriter("temp.txt");
+  for (int i=0; i<10; i++){
+    output.writeInt((int)(Math.random()*200)-100);
+  }
 
-PrintWriter output = new PrintWriter("temp.txt");
+  output.close();
+}
