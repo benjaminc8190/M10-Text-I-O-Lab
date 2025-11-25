@@ -21,7 +21,9 @@ public class TextTester{
 
     BufferedReader input = new BufferedReader(new FileReader("temp.txt"));
 
-    System.out.println(input.nextInt());
+    for (int i = 0; i < 10; i++){
+      System.out.print(input.read()+" ");
+    }
 
     input.close();
   }
